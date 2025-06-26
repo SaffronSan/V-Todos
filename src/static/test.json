@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "name": "Apples",
+            "category": "Shopping",
+            "status": false,
+            "id": "fef04b45-3ee7-41da-b628-2e92a22e8215"
+        },
+        {
+            "name": "HW #1",
+            "category": "Education",
+            "status": false,
+            "id": "e31f73f7-205a-47a1-a678-41fd4c21f407"
+        },
+        {
+            "name": "Test #1",
+            "category": "Education",
+            "status": false,
+            "id": "ee8f73f7-395a-47a1-a678-41fd4c21f407"
+        }
+    ]
+}

@@ -1,35 +1,36 @@
-@import './base.css';
+@import "tailwindcss";
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+:root{
+  --main-body-bg: var(--color-zinc-100);
+  --main-comp-bg: white;
+  --main-btn-eff: var(--color-zinc-50);
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--main-body-bg);
+  font-family: "Noto Sans Ethiopic", sans-serif;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.main-theme{
+  background-color: var(--main-comp-bg);
+  @apply rounded-lg shadow-xs;
+}
+.main-btn:hover{
+  background-color: var(--main-btn-eff);
+  cursor:pointer;
+}
+.dark{
+  --main-body-bg: var(--color-zinc-900);
+  --main-comp-bg: var(--color-zinc-950);
+  --main-btn-eff: var(--color-zinc-800);
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.dark > *{
+    @apply text-white;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+button{
+  @apply text-lg md:text-2xl;
 }
