@@ -1,5 +1,5 @@
 <template >
-    <nav class="flex w-full justify-between items-center">
+    <nav class="flex w-full justify-between items-center ">
         <div>
             <img  class="w-12 md:w-20 mt-1" src="../img/logo.png" alt="">
         </div>
@@ -16,8 +16,8 @@
     </nav>
 </template>
 <script setup>
-    import Moon from "./icons/moon.vue";
-    import Sun from "./icons/sun.vue";
+    import Moon from "./icons/Moon.vue";
+    import Sun from "./icons/Sun.vue";
     import {ref} from "vue";
     const theme = ref(true);
     function toggleTheme(){
