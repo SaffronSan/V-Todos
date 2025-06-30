@@ -20,7 +20,7 @@
         },
         {
             "name": "Test #3",
-            "category": "Gaming",
+            "category": "Workout",
             "status": false,
             "id": "ee8f73f7-395a-47a1-a278-4123f407"
         },
@@ -38,7 +38,7 @@
         },
         {
             "name": "Test #6",
-            "category": "Education",
+            "category": "Workout",
             "status": false,
             "id": "ee8f73f7-325a-47a1-a678-41fd432407"
         }

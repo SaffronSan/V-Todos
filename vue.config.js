@@ -9,5 +9,5 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
   base: "/V-ToDos/",
   plugins: [vue()],
-  publicPath: process.env.NODE_ENV === 'production' ? '/V-Todos/' : '/'
+  publicPath: process.env.NODE_ENV === 'production' ? '' : ''
 });

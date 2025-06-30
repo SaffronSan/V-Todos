@@ -11,11 +11,16 @@ body{
   padding: 0px;
   background-color: var(--main-body-bg);
   font-family: "Noto Sans Ethiopic", sans-serif;
+  @apply transition-all ease-in duration-120;
 }
 
 .main-theme{
   background-color: var(--main-comp-bg);
   @apply rounded-lg shadow-xs;
+}
+.main-theme-full{
+  background-color: var(--main-comp-bg);
+  @apply rounded-full shadow-xs;
 }
 .main-btn:hover{
   background-color: var(--main-btn-eff);
@@ -33,4 +38,28 @@ body{
 
 button{
   @apply text-lg md:text-2xl;
+}
+button:hover{
+  cursor: pointer;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.disabled-element {
+  pointer-events: none; 
+  opacity: 0.75; 
+}
+.slideup-enter-active,
+.slideup-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+.slideup-enter-from,
+.slideup-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
 }

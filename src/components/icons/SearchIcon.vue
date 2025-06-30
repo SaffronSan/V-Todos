@@ -5,6 +5,6 @@
 
 <script>
 export default {
-  name: 'Search'
+  name: 'SearchIcon'
 }
 </script>
